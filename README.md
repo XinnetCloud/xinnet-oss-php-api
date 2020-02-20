@@ -490,6 +490,8 @@ print_r($re);
 
 <span id="get_object_info">2.6、下载object</span>
 
+> 如果下载大文件，你需要再php.ini或代码里设置 ini_set 参数，使它足够大。
+
 ###### 配置文件配置文件下载路径，OSS_FILE_DOWNLOAD 
 
 ```php
@@ -501,6 +503,8 @@ print_r($re);
  * @param string $bucketname Your bucket name
  * @param string $object object name
  */
+
+// ini_set('memory_limit','2048M');
 
 if (is_file(__DIR__ . '/../../../autoload.php')) {
     require_once __DIR__ . '/../../../autoload.php';

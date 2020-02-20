@@ -7,6 +7,8 @@
  * @param string $object object name
  */
 
+// ini_set('memory_limit','2048M');
+
 if (is_file(__DIR__ . '/../../../autoload.php')) {
     require_once __DIR__ . '/../../../autoload.php';
 }
